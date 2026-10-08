@@ -1,0 +1,11 @@
+=== Coverage-Guided Fuzzing ===
+Corpus: fuzz-corpus
+Duration: 600 seconds
+Loaded 1 seed inputs
+  [10/600s] runs=113145 corpus=155 coverage=851 crashes=0
+  [20/600s] runs=232526 corpus=168 coverage=865 crashes=0
+  [30/600s] runs=346450 corpus=170 coverage=868 crashes=0
+  [40/600s] runs=461658 corpus=171 coverage=869 crashes=0
+  [50/600s] runs=571355 corpus=231 coverage=1900 crashes=0
+  [60/600s] runs=651465 corpus=560 coverage=3505 crashes=0
+  [70/600s] runs=707513 corpus=703 coverage=4010 crashes=0

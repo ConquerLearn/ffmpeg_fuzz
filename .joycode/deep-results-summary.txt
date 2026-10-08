@@ -1,0 +1,203 @@
+
+=== Query Pack: CodeQL ===
+
+--- cpp/missing-null-test (206 findings, severity: 7.5) ---
+    Returned pointer not checked
+    a64multienc.c:360 - Value may be null; it should be checked before dereferencing.
+    aacdec.c:2285 - Value may be null; it should be checked before dereferencing.
+    aacdec.c:2291 - Value may be null; it should be checked before dereferencing.
+    aacdec.c:2300 - Value may be null; it should be checked before dereferencing.
+    aacdec_usac.c:1913 - Value may be null; it should be checked before dereferencing.
+    aacdec_usac.c:1922 - Value may be null; it should be checked before dereferencing.
+    ac3enc.c:1935 - Value may be null; it should be checked before dereferencing.
+    ac3enc.c:1939 - Value may be null; it should be checked before dereferencing.
+    ac3enc.c:594 - Value may be null; it should be checked before dereferencing.
+    ac3enc_template.c:315 - Value may be null; it should be checked before dereferencing.
+    ac3enc_template.c:341 - Value may be null; it should be checked before dereferencing.
+    aom_film_grain.c:227 - Value may be null; it should be checked before dereferencing.
+    aom_film_grain.c:273 - Value may be null; it should be checked before dereferencing.
+    apedec.c:1714 - Value may be null; it should be checked before dereferencing.
+    bmpenc.c:137 - Value may be null; it should be checked before dereferencing.
+    ... and 191 more
+
+--- cpp/inconsistent-nullness-testing (20 findings, severity: 7.5) ---
+    Inconsistent null check of pointer
+    diracdec.c:2095 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    graphdump.c:38 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    vf_hwmap.c:139 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    concatdec.c:559 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    concatdec.c:563 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    concatdec.c:567 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    concatdec.c:571 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    concatdec.c:578 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    concatdec.c:589 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    movenc_ttml.c:271 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    movenc_ttml.c:280 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    movenc_ttml.c:294 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    movenc_ttml.c:295 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    mxfdec.c:4024 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    mxfdec.c:4026 - This dereference is not guarded by a non-null check, whereas other dereferences are guarded.
+    ... and 5 more
+
+--- cpp/overflow-buffer (1 findings, severity: 9.3) ---
+    Call to memory access function may overflow buffer
+    dovi_rpuenc.c:299 - This 'memcmp' operation may access 24 bytes but the [first buffer](1) is only 22 bytes.
+This 'memcmp' operation may acce...
+
+--- cpp/integer-overflow-tainted (27 findings, severity: 8.1) ---
+    Potential integer arithmetic overflow
+    af_aresample.c:192 - [string read by fread](1) flows an expression which might overflow.
+    f_sendcmd.c:169 - [external](1) flows an expression which might overflow.
+    vsrc_cellauto.c:194 - [string read by fread](1) flows an expression which might overflow.
+    vsrc_life.c:304 - [string read by fread](1) flows an expression which might overflow.
+    parseutils.c:381 - [string read by fread](1) flows an expression which might overflow.
+    htmlsubtitles.c:38 - [string read by fread](1) flows an expression which might overflow.
+    htmlsubtitles.c:38 - [string read by fread](1) flows an expression which might overflow.
+    af_adecorrelate.c:133 - [string read by fread](1) flows an expression which might overflow.
+    af_adecorrelate.c:143 - [string read by fread](1) flows an expression which might overflow.
+    asrc_anoisesrc.c:176 - [string read by fread](1) flows an expression which might overflow.
+    f_perms.c:68 - [string read by fread](1) flows an expression which might overflow.
+    vf_elbg.c:84 - [string read by fread](1) flows an expression which might overflow.
+    vf_random.c:60 - [string read by fread](1) flows an expression which might overflow.
+    vf_shufflepixels.c:305 - [string read by fread](1) flows an expression which might overflow.
+    vsrc_cellauto.c:191 - [string read by fread](1) flows an expression which might overflow.
+    ... and 12 more
+
+--- cpp/tainted-arithmetic (44 findings, severity: 8.6) ---
+    User-controlled data in arithmetic expression
+    dvdsubdec.c:605 - [string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+[string read...
+    dvdsubdec.c:606 - [string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+    af_adecorrelate.c:143 - [string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+    af_adecorrelate.c:143 - [string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+    af_adecorrelate.c:143 - [string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+    af_adecorrelate.c:61 - [string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+[string read...
+    avf_showwaves.c:541 - [string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+    avf_showwaves.c:542 - [string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+    avf_showwaves.c:543 - [string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+    avf_showwaves.c:544 - [string read by fread](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+    f_sendcmd.c:281 - [external](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+    f_sendcmd.c:166 - [external](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+    f_sendcmd.c:192 - [external](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+    f_sendcmd.c:201 - [external](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+    f_sendcmd.c:130 - [external](1) flows to an operand of an arithmetic expression, potentially causing an overflow.
+    ... and 29 more
+
+--- cpp/uncontrolled-allocation-size (1 findings, severity: 8.1) ---
+    Uncontrolled allocation size
+    mem.c:308 - This allocation size is derived from [user input (string read by fread)](1) and could allocate arbitrary amounts of memo...
+
+--- cpp/conditionally-uninitialized-variable (24 findings, severity: 7.8) ---
+    Conditionally uninitialized variable
+    h264_slice.c:229 - The status of this call to [av_pix_fmt_get_chroma_sub_sample](1) is not checked, potentially leaving [h_chroma_shift](2)...
+    lcldec.c:556 - The status of this call to [av_pix_fmt_get_chroma_sub_sample](1) is not checked, potentially leaving [subsample_h](2) un...
+    mjpegdec.c:1472 - The status of this call to [av_pix_fmt_get_chroma_sub_sample](1) is not checked, potentially leaving [chroma_h_shift](2)...
+    mjpegenc_common.c:264 - The status of this call to [av_pix_fmt_get_chroma_sub_sample](1) is not checked, potentially leaving [chroma_h_shift](2)...
+    mpegaudiodec_template.c:1760 - The status of this call to [avpriv_mpeg4audio_get_config2](1) is not checked, potentially leaving [cfg](2) uninitialized...
+    mpegvideo_dec.c:295 - The status of this call to [av_pix_fmt_get_chroma_sub_sample](1) is not checked, potentially leaving [h_chroma_shift](2)...
+    dec.c:410 - The status of this call to [av_opt_get_int](1) is not checked, potentially leaving [cur_samplerate](2) uninitialized.
+    enc.c:502 - The status of this call to [opus_gen_toc](1) is not checked, potentially leaving [offset](2) uninitialized.
+    rka.c:464 - The status of this call to [ac_get_freq](1) is not checked, potentially leaving [val](2) uninitialized.
+    rka.c:471 - The status of this call to [ac_get_freq](1) is not checked, potentially leaving [val](2) uninitialized.
+    tiffenc.c:306 - The status of this call to [av_pix_fmt_get_chroma_sub_sample](1) is not checked, potentially leaving [shift_h](2) uninit...
+    utvideodec.c:1014 - The status of this call to [av_pix_fmt_get_chroma_sub_sample](1) is not checked, potentially leaving [h_shift](2) uninit...
+    af_aresample.c:189 - The status of this call to [av_opt_get_int](1) is not checked, potentially leaving [out_rate](2) uninitialized.
+    af_aresample.c:83 - The status of this call to [av_opt_get_int](1) is not checked, potentially leaving [out_rate](2) uninitialized.
+    af_loudnorm.c:843 - The status of this call to [ff_ebur128_relative_threshold](1) is not checked, potentially leaving [thresh_in](2) uniniti...
+    ... and 9 more
+
+--- cpp/suspicious-pointer-scaling (53 findings, severity: 8.8) ---
+    Suspicious pointer scaling
+    aacps.c:727 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[46\]\[2\] (si...
+    aacps.c:729 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[3\]\[37\]\[2\...
+    aacps.c:713 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[2\] (size 8)....
+    aacps.c:713 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[2\] (size 8)....
+    aacps.c:713 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[2\] (size 8)....
+    aacps.c:713 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[2\] (size 8)....
+    aacps.c:491 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[2\] (size 8)....
+    aacps.c:492 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[2\] (size 8)....
+    aacps.c:494 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[2\] (size 8)....
+    aacps.c:496 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[2\] (size 8)....
+    aacps.c:496 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[2\] (size 8)....
+    aacps.c:503 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[2\] (size 8)....
+    aacps.c:504 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[2\] (size 8)....
+    aacps.c:506 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[2\] (size 8)....
+    aacps.c:506 - This pointer might have type [int](1) (size 4), but this pointer arithmetic is done with type INTFLOAT(*)\[2\] (size 8)....
+    ... and 38 more
+
+--- cpp/incorrect-pointer-scaling-char (112 findings, severity: 8.8) ---
+    Suspicious pointer scaling to char
+    ass_split.c:399 - This pointer might have type [(unnamed class/struct/union)](1) (size 64), but this pointer arithmetic is done with type ...
+    ass_split.c:404 - This pointer might have type [(unnamed class/struct/union)](1) (size 64), but this pointer arithmetic is done with type ...
+    ass_split.c:413 - This pointer might have type [(unnamed class/struct/union)](1) (size 64), but this pointer arithmetic is done with type ...
+    ass_split.c:418 - This pointer might have type [(unnamed class/struct/union)](1) (size 64), but this pointer arithmetic is done with type ...
+    ass_split.c:342 - This pointer might have type [(unnamed class/struct/union)](1) (size 64), but this pointer arithmetic is done with type ...
+    ass_split.c:216 - This pointer might have type [(unnamed class/struct/union)](1) (size 64), but this pointer arithmetic is done with type ...
+    ass_split.c:217 - This pointer might have type [(unnamed class/struct/union)](1) (size 64), but this pointer arithmetic is done with type ...
+    dvdec.c:589 - This pointer might have type [unsigned long long](1) (size 8), but this pointer arithmetic is done with type uint8_t * (...
+    elsdec.c:402 - This pointer might have type [ElsRungNode](1) (size 4), but this pointer arithmetic is done with type uint8_t * (size 1)...
+    h264_picture.c:60 - This pointer might have type [H264Picture](1) (size 760), but this pointer arithmetic is done with type uint8_t * (size ...
+    kgv1dec.c:130 - This pointer might have type [unsigned short](1) (size 2), but this pointer arithmetic is done with type uint8_t * (size...
+    kgv1dec.c:130 - This pointer might have type [unsigned short](1) (size 2), but this pointer arithmetic is done with type uint8_t * (size...
+    kgv1dec.c:148 - This pointer might have type [unsigned short](1) (size 2), but this pointer arithmetic is done with type uint8_t * (size...
+    me_cmp.c:492 - This pointer might have type [MECmpContext](1) (size 792), but this pointer arithmetic is done with type const char * (s...
+    proresenc_kostya.c:86 - This pointer might have type [unsigned short](1) (size 2), but this pointer arithmetic is done with type const uint8_t *...
+    ... and 97 more
+
+--- cpp/suspicious-add-sizeof (20 findings, severity: 8.8) ---
+    Suspicious add with sizeof
+    h264idct_template.c:231 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    h264idct_template.c:233 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    h264idct_template.c:240 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    h264idct_template.c:242 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    h264idct_template.c:218 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    h264idct_template.c:220 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    h264idct_template.c:207 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    h264idct_template.c:208 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    h264idct_template.c:194 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    h264idct_template.c:195 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    h264idct_template.c:182 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    h264idct_template.c:183 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    h264pred_template.c:1327 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    h264pred_template.c:1329 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    h264pred_template.c:1318 - Suspicious sizeof offset in a pointer arithmetic expression. The type of the pointer is [int16_t *](1).
+    ... and 5 more
+
+--- cpp/uninitialized-local (1 findings, severity: 7.8) ---
+    Potentially uninitialized local variable
+    mov.c:1253 - The variable [ret](1) may not be initialized at this access.
+
+--- cpp/stack-address-escape (12 findings, severity: warning) ---
+    Local variable address stored in non-local memory
+    flashsv.c:182 - A stack address ([source](1)) may be assigned to a non-local variable.
+    mscc.c:162 - A stack address ([source](1)) may be assigned to a non-local variable.
+    dec.c:539 - A stack address ([source](1)) may be assigned to a non-local variable.
+    dec.c:541 - A stack address ([source](1)) may be assigned to a non-local variable.
+    tiffenc.c:343 - A stack address ([source](1)) may be assigned to a non-local variable.
+    client.h:44 - A stack address which arrived via a [parameter](1) may be assigned to a non-local variable.
+    matroskaenc.c:550 - A stack address which arrived via a [parameter](1) may be assigned to a non-local variable.
+    movenc.c:7642 - A stack address ([source](1)) may be assigned to a non-local variable.
+    movenc.c:7273 - A stack address ([source](1)) may be assigned to a non-local variable.
+    dict.c:154 - A stack address which arrived via a [parameter](1) may be assigned to a non-local variable.
+    dict.c:155 - A stack address which arrived via a [parameter](1) may be assigned to a non-local variable.
+    slicethread.c:130 - A stack address which arrived via a [parameter](1) may be assigned to a non-local variable.
+
+--- cpp/improper-null-termination (2 findings, severity: 7.8) ---
+    Potential improper null termination
+    hls.c:444 - Variable [tmp_str](1) may not be null terminated.
+    matroskaenc.c:1991 - Variable [codec_id](1) may not be null terminated.
+
+--- cpp/suspicious-call-to-memset (9 findings, severity: 10.0) ---
+    Suspicious call to memset
+    ac3enc_template.c:102 - The size of the memory area set by memset should not be the size of the type CoefType\[7\]\[16\].
+    h264addpx_template.c:71 - The size of the memory area set by memset should not be the size of the type int32_t.
+    h264addpx_template.c:47 - The size of the memory area set by memset should not be the size of the type int32_t.
+    h264pred_template.c:1272 - The size of the memory area set by memset should not be the size of the type int32_t.
+    h264pred_template.c:1248 - The size of the memory area set by memset should not be the size of the type int32_t.
+    h264pred_template.c:1223 - The size of the memory area set by memset should not be the size of the type int32_t.
+    h264pred_template.c:1203 - The size of the memory area set by memset should not be the size of the type int32_t.
+    h264pred_template.c:1172 - The size of the memory area set by memset should not be the size of the type int32_t.
+    h264pred_template.c:1136 - The size of the memory area set by memset should not be the size of the type int32_t.
+
+Total results: 532

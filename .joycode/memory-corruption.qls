@@ -1,0 +1,45 @@
+- description: "FFmpeg memory-corruption focused queries (binary-level vulnerabilities)"
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Critical/UseAfterFree.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Critical/DoubleFree.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Critical/MissingNullTest.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Critical/InconsistentNullnessTesting.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Critical/OverflowCalculated.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Critical/OverflowDestination.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Critical/OverflowStatic.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-119/OverflowBuffer.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-119/OverrunWriteProductFlow.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-120/BadlyBoundedWrite.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-120/OverrunWrite.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-120/OverrunWriteFloat.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-120/UnboundedWrite.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-120/VeryLikelyOverrunWrite.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-121/UnterminatedVarargsCall.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-129/ImproperArrayIndexValidation.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-131/NoSpaceForZeroTerminator.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-134/UncontrolledFormatString.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-190/IntegerOverflowTainted.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-190/ArithmeticTainted.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-190/TaintedAllocationSize.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-193/InvalidPointerDeref.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-457/ConditionallyUninitializedVariable.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-468/IncorrectPointerScaling.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-468/IncorrectPointerScalingChar.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-468/SuspiciousAddWithSizeof.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-570/IncorrectAllocationErrorHandling.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-676/DangerousFunctionOverflow.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-807/TaintedCondition.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-835/InfiniteLoopWithUnsatisfiableExitCondition.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Security/CWE/CWE-843/TypeConfusion.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Likely Bugs/Memory Management/UninitializedLocal.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Likely Bugs/Memory Management/PointerOverflow.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Likely Bugs/Memory Management/PotentialBufferOverflow.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Likely Bugs/Memory Management/StackAddressEscapes.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Likely Bugs/Memory Management/ReturnStackAllocatedMemory.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Likely Bugs/Memory Management/StrncpyFlippedArgs.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Likely Bugs/Memory Management/UnsafeUseOfStrcat.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Likely Bugs/Memory Management/AllocaInLoop.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Likely Bugs/Memory Management/NtohlArrayNoBound.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Likely Bugs/Memory Management/UsingExpiredStackAddress.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Likely Bugs/Memory Management/ImproperNullTermination.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Likely Bugs/Memory Management/SuspiciousCallToMemset.ql
+- query: C:/Users/Administrator/Desktop/1/8-6/FFmpeg-release-8.1/.tools/codeql/qlpacks/codeql/cpp-queries/1.6.3/Likely Bugs/Memory Management/SuspiciousCallToStrncat.ql

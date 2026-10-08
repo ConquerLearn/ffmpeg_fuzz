@@ -1,0 +1,9 @@
+=== Coverage-Guided Fuzzing ===
+Corpus: c:\Users\Administrator\Desktop\1\8-6\FFmpeg-release-8.1\fuzz-corpus-mov
+Duration: 600 seconds
+Loaded 13 seed inputs
+  [10/600s] runs=68540 corpus=233 coverage=2987 crashes=0
+  [CRASH] Saved crash to c:\Users\Administrator\Desktop\1\8-6\FFmpeg-release-8.1\fuzz-corpus-mov/crash_1.bin
+  [20/600s] runs=127362 corpus=278 coverage=3116 crashes=1
+  [30/600s] runs=183473 corpus=295 coverage=3146 crashes=1
+  [40/600s] runs=234435 corpus=310 coverage=3175 crashes=1

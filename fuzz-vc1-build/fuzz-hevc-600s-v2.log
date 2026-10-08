@@ -1,0 +1,71 @@
+=== Coverage-Guided Fuzzing ===
+Corpus: c:\Users\Administrator\Desktop\1\8-6\FFmpeg-release-8.1\fuzz-corpus
+Duration: 600 seconds
+Loaded 23 seed inputs
+  [10/600s] runs=52819 corpus=101 coverage=821 crashes=0
+  [20/600s] runs=103403 corpus=120 coverage=851 crashes=0
+  [30/600s] runs=165814 corpus=132 coverage=871 crashes=0
+  [40/600s] runs=215546 corpus=140 coverage=884 crashes=0
+  [50/600s] runs=261297 corpus=147 coverage=901 crashes=0
+  [60/600s] runs=325148 corpus=149 coverage=904 crashes=0
+  [70/600s] runs=378634 corpus=153 coverage=914 crashes=0
+  [80/600s] runs=442275 corpus=157 coverage=923 crashes=0
+  [90/600s] runs=507467 corpus=160 coverage=927 crashes=0
+  [100/600s] runs=574221 corpus=165 coverage=932 crashes=0
+  [110/600s] runs=633932 corpus=165 coverage=932 crashes=0
+  [120/600s] runs=702934 corpus=193 coverage=1048 crashes=0
+  [130/600s] runs=764743 corpus=207 coverage=1062 crashes=0
+  [140/600s] runs=833131 corpus=211 coverage=1066 crashes=0
+  [150/600s] runs=896315 corpus=215 coverage=1077 crashes=0
+  [160/600s] runs=964076 corpus=216 coverage=1078 crashes=0
+  [170/600s] runs=1025841 corpus=216 coverage=1078 crashes=0
+  [180/600s] runs=1087144 corpus=222 coverage=1094 crashes=0
+  [190/600s] runs=1153578 corpus=225 coverage=1099 crashes=0
+  [200/600s] runs=1216656 corpus=238 coverage=1148 crashes=0
+  [210/600s] runs=1276773 corpus=271 coverage=1263 crashes=0
+  [220/600s] runs=1341247 corpus=279 coverage=1272 crashes=0
+  [230/600s] runs=1400133 corpus=283 coverage=1276 crashes=0
+  [240/600s] runs=1463119 corpus=284 coverage=1277 crashes=0
+  [250/600s] runs=1520553 corpus=285 coverage=1278 crashes=0
+  [260/600s] runs=1587991 corpus=286 coverage=1279 crashes=0
+  [270/600s] runs=1639885 corpus=288 coverage=1281 crashes=0
+  [280/600s] runs=1708742 corpus=288 coverage=1281 crashes=0
+  [290/600s] runs=1769552 corpus=288 coverage=1281 crashes=0
+  [300/600s] runs=1830691 corpus=288 coverage=1281 crashes=0
+  [310/600s] runs=1890057 corpus=289 coverage=1282 crashes=0
+  [320/600s] runs=1951753 corpus=289 coverage=1282 crashes=0
+  [330/600s] runs=2018280 corpus=289 coverage=1282 crashes=0
+  [340/600s] runs=2087660 corpus=290 coverage=1283 crashes=0
+  [350/600s] runs=2155196 corpus=290 coverage=1283 crashes=0
+  [360/600s] runs=2225329 corpus=290 coverage=1283 crashes=0
+  [370/600s] runs=2294025 corpus=290 coverage=1283 crashes=0
+  [380/600s] runs=2363955 corpus=290 coverage=1283 crashes=0
+  [390/600s] runs=2430219 corpus=290 coverage=1283 crashes=0
+  [400/600s] runs=2500976 corpus=290 coverage=1283 crashes=0
+  [410/600s] runs=2570312 corpus=290 coverage=1283 crashes=0
+  [420/600s] runs=2639794 corpus=290 coverage=1283 crashes=0
+  [430/600s] runs=2706700 corpus=291 coverage=1284 crashes=0
+  [440/600s] runs=2771317 corpus=291 coverage=1284 crashes=0
+  [450/600s] runs=2841816 corpus=291 coverage=1284 crashes=0
+  [460/600s] runs=2906566 corpus=291 coverage=1284 crashes=0
+  [470/600s] runs=2967226 corpus=291 coverage=1284 crashes=0
+  [480/600s] runs=3033790 corpus=291 coverage=1284 crashes=0
+  [490/600s] runs=3101427 corpus=291 coverage=1284 crashes=0
+  [500/600s] runs=3167703 corpus=291 coverage=1284 crashes=0
+  [510/600s] runs=3229834 corpus=291 coverage=1284 crashes=0
+  [520/600s] runs=3297362 corpus=291 coverage=1284 crashes=0
+  [530/600s] runs=3359530 corpus=291 coverage=1284 crashes=0
+  [540/600s] runs=3426239 corpus=292 coverage=1289 crashes=0
+  [550/600s] runs=3491376 corpus=292 coverage=1289 crashes=0
+  [560/600s] runs=3557135 corpus=293 coverage=1294 crashes=0
+  [570/600s] runs=3622697 corpus=293 coverage=1294 crashes=0
+  [580/600s] runs=3690612 corpus=294 coverage=1295 crashes=0
+  [590/600s] runs=3753612 corpus=295 coverage=1296 crashes=0
+  [600/600s] runs=3814681 corpus=296 coverage=1297 crashes=0
+
+=== Fuzzing Complete ===
+Total runs: 3814681
+Final corpus: 296 inputs
+Coverage edges: 1297
+New coverage found: 273 times
+Crashes: 0

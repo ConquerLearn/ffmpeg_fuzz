@@ -1,0 +1,98 @@
+=== Coverage-Guided Fuzzing ===
+Corpus: fuzz-corpus
+Duration: 600 seconds
+Loaded 6 seed inputs
+  [10/600s] runs=68383 corpus=165 coverage=1110 crashes=0
+  [20/600s] runs=133023 corpus=175 coverage=1123 crashes=0
+  [30/600s] runs=200072 corpus=184 coverage=1139 crashes=0
+  [40/600s] runs=256088 corpus=210 coverage=1567 crashes=0
+  [50/600s] runs=309015 corpus=325 coverage=3306 crashes=0
+  [60/600s] runs=345463 corpus=501 coverage=4228 crashes=0
+  [70/600s] runs=371365 corpus=559 coverage=4559 crashes=0
+  [80/600s] runs=395512 corpus=599 coverage=4704 crashes=0
+  [90/600s] runs=417277 corpus=632 coverage=5012 crashes=0
+  [100/600s] runs=436470 corpus=659 coverage=5091 crashes=0
+  [110/600s] runs=455892 corpus=693 coverage=5226 crashes=0
+  [120/600s] runs=473757 corpus=718 coverage=5307 crashes=0
+  [130/600s] runs=488722 corpus=749 coverage=5373 crashes=0
+  [140/600s] runs=504365 corpus=770 coverage=5410 crashes=0
+  [150/600s] runs=520079 corpus=782 coverage=5437 crashes=0
+  [160/600s] runs=538929 corpus=794 coverage=5473 crashes=0
+  [170/600s] runs=557136 corpus=807 coverage=5541 crashes=0
+  [180/600s] runs=573417 corpus=812 coverage=5549 crashes=0
+  [190/600s] runs=590079 corpus=821 coverage=5582 crashes=0
+  [200/600s] runs=605785 corpus=826 coverage=5595 crashes=0
+  [210/600s] runs=624168 corpus=859 coverage=6140 crashes=0
+  [220/600s] runs=639307 corpus=876 coverage=6184 crashes=0
+  [230/600s] runs=655416 corpus=887 coverage=6302 crashes=0
+  [240/600s] runs=670005 corpus=904 coverage=6361 crashes=0
+  [250/600s] runs=680386 corpus=916 coverage=6392 crashes=0
+  [260/600s] runs=693121 corpus=936 coverage=6459 crashes=0
+  [270/600s] runs=707970 corpus=951 coverage=6525 crashes=0
+Assertion ret != (-(int)(('B') | (('U') << 8) | (('G') << 16) | ((unsigned)('!') << 24))) failed at tools\target_dec_fuzzer.c:103
+  [CRASH] Saved crash to fuzz-corpus/crash_1.bin
+  [ASSERT] abort()/av_assert0 caught at run #712300
+  [280/600s] runs=722588 corpus=966 coverage=6587 crashes=1
+  [290/600s] runs=739243 corpus=975 coverage=6604 crashes=1
+  [300/600s] runs=754352 corpus=980 coverage=6614 crashes=1
+Assertion ret != (-(int)(('B') | (('U') << 8) | (('G') << 16) | ((unsigned)('!') << 24))) failed at tools\target_dec_fuzzer.c:103
+  [CRASH] Saved crash to fuzz-corpus/crash_2.bin
+  [ASSERT] abort()/av_assert0 caught at run #757869
+  [310/600s] runs=770009 corpus=985 coverage=6627 crashes=2
+  [320/600s] runs=784165 corpus=988 coverage=6630 crashes=2
+  [330/600s] runs=799759 corpus=990 coverage=6632 crashes=2
+Assertion ret != (-(int)(('B') | (('U') << 8) | (('G') << 16) | ((unsigned)('!') << 24))) failed at tools\target_dec_fuzzer.c:103
+  [CRASH] Saved crash to fuzz-corpus/crash_3.bin
+  [ASSERT] abort()/av_assert0 caught at run #803278
+  [340/600s] runs=813655 corpus=993 coverage=6638 crashes=3
+Assertion ret != (-(int)(('B') | (('U') << 8) | (('G') << 16) | ((unsigned)('!') << 24))) failed at tools\target_dec_fuzzer.c:103
+  [CRASH] Saved crash to fuzz-corpus/crash_4.bin
+  [ASSERT] abort()/av_assert0 caught at run #815084
+  [350/600s] runs=826350 corpus=997 coverage=6647 crashes=4
+  [360/600s] runs=840293 corpus=1002 coverage=6654 crashes=4
+Assertion ret != (-(int)(('B') | (('U') << 8) | (('G') << 16) | ((unsigned)('!') << 24))) failed at tools\target_dec_fuzzer.c:103
+  [CRASH] Saved crash to fuzz-corpus/crash_5.bin
+  [ASSERT] abort()/av_assert0 caught at run #845885
+  [370/600s] runs=855953 corpus=1008 coverage=6664 crashes=5
+Assertion ret != (-(int)(('B') | (('U') << 8) | (('G') << 16) | ((unsigned)('!') << 24))) failed at tools\target_dec_fuzzer.c:103
+  [CRASH] Saved crash to fuzz-corpus/crash_6.bin
+  [ASSERT] abort()/av_assert0 caught at run #856517
+  [380/600s] runs=870669 corpus=1010 coverage=6668 crashes=6
+  [390/600s] runs=885605 corpus=1011 coverage=6669 crashes=6
+  [400/600s] runs=900798 corpus=1015 coverage=6674 crashes=6
+  [410/600s] runs=916312 corpus=1017 coverage=6676 crashes=6
+  [420/600s] runs=932653 corpus=1018 coverage=6677 crashes=6
+  [430/600s] runs=947794 corpus=1019 coverage=6678 crashes=6
+  [440/600s] runs=965275 corpus=1022 coverage=6681 crashes=6
+  [450/600s] runs=979237 corpus=1026 coverage=6695 crashes=6
+  [460/600s] runs=991800 corpus=1028 coverage=6698 crashes=6
+  [470/600s] runs=1007232 corpus=1029 coverage=6708 crashes=6
+Assertion ret != (-(int)(('B') | (('U') << 8) | (('G') << 16) | ((unsigned)('!') << 24))) failed at tools\target_dec_fuzzer.c:103
+  [CRASH] Saved crash to fuzz-corpus/crash_7.bin
+  [ASSERT] abort()/av_assert0 caught at run #1019312
+  [480/600s] runs=1023266 corpus=1033 coverage=6716 crashes=7
+  [490/600s] runs=1038583 corpus=1034 coverage=6717 crashes=7
+  [500/600s] runs=1054262 corpus=1034 coverage=6717 crashes=7
+  [510/600s] runs=1070407 corpus=1035 coverage=6718 crashes=7
+Assertion ret != (-(int)(('B') | (('U') << 8) | (('G') << 16) | ((unsigned)('!') << 24))) failed at tools\target_dec_fuzzer.c:103
+  [CRASH] Saved crash to fuzz-corpus/crash_8.bin
+  [ASSERT] abort()/av_assert0 caught at run #1080087
+  [520/600s] runs=1087302 corpus=1036 coverage=6719 crashes=8
+  [530/600s] runs=1102379 corpus=1036 coverage=6719 crashes=8
+  [540/600s] runs=1117921 corpus=1036 coverage=6719 crashes=8
+  [550/600s] runs=1131191 corpus=1038 coverage=6725 crashes=8
+  [560/600s] runs=1148131 corpus=1039 coverage=6726 crashes=8
+  [570/600s] runs=1162510 corpus=1041 coverage=6731 crashes=8
+  [580/600s] runs=1178822 corpus=1043 coverage=6734 crashes=8
+Assertion ret != (-(int)(('B') | (('U') << 8) | (('G') << 16) | ((unsigned)('!') << 24))) failed at tools\target_dec_fuzzer.c:103
+  [CRASH] Saved crash to fuzz-corpus/crash_9.bin
+  [ASSERT] abort()/av_assert0 caught at run #1189350
+  [590/600s] runs=1193102 corpus=1058 coverage=6974 crashes=9
+  [600/600s] runs=1205855 corpus=1067 coverage=6997 crashes=9
+
+=== Fuzzing Complete ===
+Total runs: 1205855
+Final corpus: 1067 inputs
+Coverage edges: 6997
+New coverage found: 1061 times
+Crashes: 9
